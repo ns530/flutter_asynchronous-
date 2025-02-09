@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'home_page.dart';
 
 class OnBorderingPage extends StatefulWidget {
@@ -12,10 +13,17 @@ class _OnBorderingPageState extends State<OnBorderingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const Image(
+              image: AssetImage('assets/background.png'),
+            ),
+            const SizedBox(
+              height: 56,
+            ),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     minimumSize: const Size(300, 60),
